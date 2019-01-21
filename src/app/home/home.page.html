@@ -1,0 +1,24 @@
+<ion-header>
+ <ion-navbar color="primary">
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank camara Demo
+    </ion-title>
+  </ion-toolbar>
+ </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card >
+    <ion-card-content>
+        <button ion-button color="danger"  ion-button block (click)="getPicture()">
+          Toma una foto
+         <ion-icon name= "camara"></ion-icon>
+
+          
+        </button>
+        <img [src]="image" *ngIf="image" />
+  
+    </ion-card-content>
+  </ion-card>
+</ion-content>
